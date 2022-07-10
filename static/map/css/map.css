@@ -20,7 +20,7 @@ body {
     width: 30px;
     position: absolute;
     z-index: 1;
-    background-color: white;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .side-btn {
