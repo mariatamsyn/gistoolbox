@@ -1,17 +1,9 @@
-#wrapper {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
 #container {
     height: 100%;
     width:100%;
-    position: relative;
 }
 
 #map {
-    cursor: pointer;
     height: 100%;
     width: 100%;
     position:absolute;
