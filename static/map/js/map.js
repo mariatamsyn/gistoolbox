@@ -5,3 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+L.marker([51.505, -0.09]).addTo(map)
+    .bindPopup('This is a pop-up!')
+    .openPopup();
+
