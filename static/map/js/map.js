@@ -19,5 +19,9 @@ L.control.scale({position:'bottomright'}).addTo(map)
 // fullscreen 
 const body = document.body
 function toggleFullscreen() {
-    body.requestFullscreen();
+    if (!document.fullscreenElement) {
+        body.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
 }
