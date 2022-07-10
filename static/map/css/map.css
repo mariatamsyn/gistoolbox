@@ -28,3 +28,7 @@ body {
     width:100%;
     position: absolute;
 }
+
+.sb-btn {
+    align-items: center;
+}
