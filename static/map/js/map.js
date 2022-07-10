@@ -28,5 +28,5 @@ function toggleFullscreen() {
 
 // coordinates
 map.on('mousemove', function(e) {
-    console.log(e)
+    
 })
