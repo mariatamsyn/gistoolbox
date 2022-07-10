@@ -43,3 +43,7 @@ i {
     font-weight: bold;
     color: white;
 }
+
+#cont-ft {
+    z-index:1;
+}
