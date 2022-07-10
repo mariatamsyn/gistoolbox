@@ -17,10 +17,10 @@ L.marker([51.505, -0.09]).addTo(map)
 L.control.scale({position:'bottomright'}).addTo(map)
 
 // fullscreen 
-const body = document.body
+const mapdiv = document.getElementById('map')
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
-        body.requestFullscreen();
+        mapdiv.requestFullscreen();
     } else {
         document.exitFullscreen();
     }
