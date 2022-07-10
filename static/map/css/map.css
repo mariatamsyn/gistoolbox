@@ -12,13 +12,14 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 100;
+    z-index: 0;
 }
 
-#sidebar {
-    height: 100%;
-    width: 10%;
+#header {
+    height: 10%;
+    width: 100%;
     position: absolute;
-    z-index: 10;
-    background-color: black;
+    z-index: 1;
+    background-color: white;
+    opacity: 50;
 }
