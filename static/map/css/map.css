@@ -2,7 +2,7 @@ body {
     overflow: hidden;
 }
 
-#container{
+#cont-main{
     height: 100%;
     width: 100%;
     position:relative;
@@ -15,7 +15,7 @@ body {
     z-index: 0;
 }
 
-#sidebar {
+#cont-sb {
     height: 100%;
     width: 30px;
     position: absolute;
