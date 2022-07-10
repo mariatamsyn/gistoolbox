@@ -20,11 +20,17 @@ body {
     width: 50px;
     position: absolute;
     z-index: 1;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #sb-btns {
     height:100%;
     width:100%;
-    position: absolute;
+    position: relative;
+}
+
+.sb-btn {
+    width:100%;
+    height:auto;
+    padding:10px;
 }
