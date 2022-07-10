@@ -27,6 +27,6 @@ function toggleFullscreen() {
 }
 
 // coordinates
-map.on('mouseover', function(e) {
+map.on('mousemove', function(e) {
     console.log(e)
 })
