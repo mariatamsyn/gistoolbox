@@ -12,4 +12,4 @@ L.marker([51.505, -0.09]).addTo(map)
     .openPopup();
 
 // scale
-L.control.scale({position:'bottom-right'}).addTo(map)
+L.control.scale().addTo(map)
