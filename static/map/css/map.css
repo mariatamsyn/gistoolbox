@@ -17,7 +17,7 @@ body {
 
 #cont-sb {
     height: 100%;
-    width: 50px;
+    width: 30px;
     position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
