@@ -1,5 +1,5 @@
 body {
-    overflow: hidden; /* Hide scrollbars */
+    overflow: hidden;
 }
 
 #map {
@@ -8,9 +8,9 @@ body {
     position: absolute;
 }
 
-#header {
-    height: 20%;
-    width: 100%;
+#sidebar {
+    height: 100%;
+    width: 10%;
     position: absolute;
-    z-index: 100;
+    z-index: -1;
 }
