@@ -45,5 +45,9 @@ i {
 }
 
 #cont-ft {
-    z-index:1;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
 }
