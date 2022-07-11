@@ -40,5 +40,5 @@ function toggleFullscreen() {
 
 // coordinates
 map.on('mousemove', function(e) {
-    $('#cont-ft').html(`Lat: ${e.latLng.lat} Long: ${e.latLng.lng}`)
+    $('#cont-ft').html(`Lat: temp1 Long: ${e.latLng.lng}`)
 })
