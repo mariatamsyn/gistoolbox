@@ -1,14 +1,3 @@
-// general functions
-function round_num(num, dec) {
-    let ref = '1'
-    for (let i=0; i < dec; i++) {
-        ref += '0';
-    }
-    ref = parseInt(ref)
-    return Math.round(num*ref) / ref
-}
-
-
 // map functions
 const map = L.map('map').setView([51.505, -0.09], 13);
 
@@ -40,7 +29,7 @@ function toggleFullscreen() {
 
 // coordinates
 map.on('mousemove', function(e) {
-    y = round_num(e.latlng.lat,5)
+    y = e.latlng.lat
     x = e.latlng.lng
-    $('#cont-ft').html(`Lat: ${y} Long: ${x}`)
+    $('#cont-ft').html(`Lat: ${round_num(y,5)} Long: ${round_num(x)}`)
 })
