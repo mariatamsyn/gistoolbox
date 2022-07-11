@@ -40,7 +40,7 @@ function toggleFullscreen() {
 
 // coordinates
 map.on('mousemove', function(e) {
-    y = e.latlng.lat
+    y = round_num(e.latlng.lat,5)
     x = e.latlng.lng
     $('#cont-ft').html(`Lat: ${y} Long: ${x}`)
 })
