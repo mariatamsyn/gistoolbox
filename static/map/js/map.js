@@ -1,3 +1,15 @@
+// general functions
+function round_num(num, dec) {
+    let ref = '1'
+    for (let i=0; i < dec; i++) {
+        ref += '0';
+    }
+    ref = parseInt(ref)
+    return Math.round(num*ref) / ref
+}
+
+
+// map functions
 const map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
