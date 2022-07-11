@@ -4,5 +4,6 @@ function round_num(num, dec) {
         ref += '0';
     }
     ref = parseInt(ref)
+    console.log(ref)
     return Math.round(num*ref) / ref
 }
