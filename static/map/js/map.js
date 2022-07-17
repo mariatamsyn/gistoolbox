@@ -20,6 +20,10 @@ L.control.scale({position:'bottomright'}).addTo(map)
 // leaflet print
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
 
+// leaflet measure 
+var measureControl = new L.Control.Measure({position: 'bottomright'});
+measureControl.addTo(map);
+
 // fullscreen 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
