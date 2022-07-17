@@ -21,7 +21,7 @@ L.control.scale({position:'bottomright'}).addTo(map)
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
 
 // leaflet measure 
-
+const measureControl = L.control.measure({position: 'bottomright'}).addTo(myMap);
 
 // coordinates
 map.on('mousemove', function(e) {
