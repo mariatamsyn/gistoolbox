@@ -35,5 +35,5 @@ map.on('mousemove', function(e) {
 
 // print map
 function printMap() {
-    windows.print();
+    window.print();
 }
