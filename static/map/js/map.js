@@ -21,8 +21,7 @@ L.control.scale({position:'bottomright'}).addTo(map)
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
 
 // leaflet measure 
-var measureControl = new L.Control.Measure({position: 'bottomright'});
-measureControl.addTo(map);
+const measureControl = L.control.Measure({position: 'bottomright'}).addTo(map);
 
 // fullscreen 
 function toggleFullscreen() {
