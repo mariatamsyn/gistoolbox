@@ -1,3 +1,6 @@
 [submodule "static/leaflet/js/static/leaflet/js/leaflet.browser.print"]
 	path = static/leaflet/js/static/leaflet/js/leaflet.browser.print
 	url = https://github.com/Igor-Vladyka/leaflet.browser.print.git
+[submodule "static/leaflet/js/leaflet.browser.print"]
+	path = static/leaflet/js/leaflet.browser.print
+	url = https://github.com/Igor-Vladyka/leaflet.browser.print.git
