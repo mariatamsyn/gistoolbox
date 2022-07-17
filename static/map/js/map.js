@@ -32,3 +32,8 @@ map.on('mousemove', function(e) {
     x = e.latlng.lng
     $('#hd-coords').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
 })
+
+// print map
+function printMap() {
+    windows.print();
+}
