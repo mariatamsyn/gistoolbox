@@ -34,6 +34,7 @@ body {
     width:100%;
     height:auto;
     padding:10px;
+    background-color: rgba(1, 0, 77, 0);
     border:none;
     cursor:pointer;
 }
@@ -49,6 +50,7 @@ i {
     width: 100%;
     position: absolute;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
     align-items: center;
 }
 
