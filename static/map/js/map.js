@@ -21,14 +21,7 @@ L.control.scale({position:'bottomright'}).addTo(map)
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
 
 // leaflet measure 
-const measureControl = L.control.measure({
-    position: 'bottomright',
-    primaryLengthUnit: 'meters',
-    secondaryLengthUnit: 'kilometers',
-    primaryAreaUnit: 'sqmeters',
-    secondaryAreaUnit: 'hectares'
-    
-}).addTo(map)
+const measureAreaControl = L.Control.measureAreaControl({position: 'bottomright'}).addTo(map)
 
 // coordinates
 map.on('mousemove', function(e) {
