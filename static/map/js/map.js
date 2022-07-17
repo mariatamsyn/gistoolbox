@@ -18,10 +18,10 @@ L.marker([51.505, -0.09]).addTo(map)
 L.control.scale({position:'bottomright'}).addTo(map)
 
 // fullscreen 
-const mapdiv = document.getElementById('map')
+const mapdiv = document.getElementById('cont-main')
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
-        mapdiv.requestFullscreen();
+        document.requestFullscreen();
     } else {
         document.exitFullscreen();
     }
@@ -29,7 +29,6 @@ function toggleFullscreen() {
 
 // coordinates
 map.on('mousemove', function(e) {
-
     y = e.latlng.lat
     x = e.latlng.lng
     $('#hd-coords').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
