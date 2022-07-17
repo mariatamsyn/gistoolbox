@@ -1,10 +1,10 @@
 // map functions
 const map = L.map('map').setView([51.505, -0.09], 13);
 
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     maxZoom: 19,
-//     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// }).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
 
 var wmsLayer = L.tileLayer.wms('https://gis.unep-wcmc.org/arcgis/services/wdpa/public/MapServer/WMSServer?request=GetCapabilities&service=WMS', {
     layers: 'WDPA_point_Jul2022'
