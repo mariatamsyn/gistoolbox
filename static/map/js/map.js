@@ -20,9 +20,6 @@ L.control.scale({position:'bottomright'}).addTo(map)
 // leaflet print
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
 
-// leaflet measure 
-const measureAreaControl = L.Control.measureAreaControl({position: 'bottomright'}).addTo(map)
-
 // coordinates
 map.on('mousemove', function(e) {
     y = e.latlng.lat
