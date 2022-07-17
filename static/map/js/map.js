@@ -31,5 +31,5 @@ function toggleFullscreen() {
 map.on('mousemove', function(e) {
     y = e.latlng.lat
     x = e.latlng.lng
-    $('#cont-ft').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
+    $('#cont-hd').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
 })
