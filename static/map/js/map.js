@@ -17,6 +17,9 @@ L.marker([51.505, -0.09]).addTo(map)
 // scale
 L.control.scale({position:'bottomright'}).addTo(map)
 
+// leaflet print
+L.control,browserPrint().addTo(map)
+
 // fullscreen 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
