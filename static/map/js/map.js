@@ -34,6 +34,7 @@ map.on('mousemove', function(e) {
 })
 
 // print map
+const mapdiv = document.getElementById('map');
 function printMap() {
-    window.print();
+    mapdiv.print();
 }
