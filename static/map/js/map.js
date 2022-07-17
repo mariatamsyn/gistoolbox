@@ -6,8 +6,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var wmsLayer = L.tileLayer.wms('https://gis.unep-wcmc.org/arcgis/services/wdpa/public/MapServer/WMSServer?', {
-    layers: 'WDPA_point_Jul2022'
+var wmsLayer = L.tileLayer.wms('https://ows.emodnet-bathymetry.eu/wms', {
+    layers: 'Coastlines'
 }).addTo(map);
 
 // map zoom
