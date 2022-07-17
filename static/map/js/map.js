@@ -23,6 +23,15 @@ const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(m
 // leaflet measure 
 const measureControl = L.control.Measure({position: 'bottomright'}).addTo(map);
 
+// coordinates
+map.on('mousemove', function(e) {
+    y = e.latlng.lat
+    x = e.latlng.lng
+    $('#hd-coords').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
+})
+
+
+
 // fullscreen 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
@@ -31,13 +40,6 @@ function toggleFullscreen() {
         document.exitFullscreen();
     }
 }
-
-// coordinates
-map.on('mousemove', function(e) {
-    y = e.latlng.lat
-    x = e.latlng.lng
-    $('#hd-coords').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
-})
 
 // print map
 function printMap() {
