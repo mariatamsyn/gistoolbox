@@ -1,5 +1,5 @@
 // map functions
-const map = L.map('map').setView([51.505, -0.09], 13);
+const map = L.map('map', {measureControl: true}).setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -19,9 +19,6 @@ L.control.scale({position:'bottomright'}).addTo(map)
 
 // leaflet print
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
-
-// leaflet measure 
-const measureControl = L.control.measure({position: 'bottomright'}).addTo(map);
 
 // coordinates
 map.on('mousemove', function(e) {
