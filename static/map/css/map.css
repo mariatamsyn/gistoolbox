@@ -52,11 +52,12 @@ i {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
-    align-content: center;
-    text-align: center;
 
 }
 
 #hd-coords {
     width: 50%;
+    align-self: center;
+    align-items: center;
+    text-align: center;
 }
