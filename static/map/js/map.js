@@ -22,6 +22,7 @@ const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(m
 
 // coordinates
 map.on('mousemove', function(e) {
+    console.log('here')
     y = e.latlng.lat
     x = e.latlng.lng
     $('#pointer-coordinates-values').value = (`${round_num(x,5)}, ${round_num(y,5)}`)
