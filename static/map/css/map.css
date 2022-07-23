@@ -19,6 +19,11 @@ body {
     border-radius: 3px;
     font-weight: bolder;
     font-size: 15;
-    display: block;
+    white-space: nowrap;
 }
 
+.pointer-coordinates-contents {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
