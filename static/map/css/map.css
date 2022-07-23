@@ -9,3 +9,9 @@ body {
     z-index: 0;
 }
 
+.pointer-coordinates {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
