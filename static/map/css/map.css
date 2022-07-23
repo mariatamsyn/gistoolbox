@@ -2,49 +2,9 @@ body {
     overflow: hidden;
 }
 
-.map-coordinates {
-    
-}
-
-#cont-main{
-    height: 100%;
-    width: 100%;
-    position:relative;
-}
-
 #map {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 0;
-}
-
-#cont-sb {
-    height: 100%;
-    width: 50px;
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#sb-btns {
-    height:100%;
-    width:100%;
-    position: relative;
-    z-index: 10;
-}
-
-.sb-btn {
-    width:100%;
-    height:auto;
-    padding:10px;
-    background-color: rgba(1, 0, 77, 0);
-    border:none;
-    cursor:pointer;
-}
-
-i {
-    font-size:large;
-    font-weight: bold;
-    color: white;
 }
