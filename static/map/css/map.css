@@ -27,6 +27,7 @@ body {
 
 .pointer-coordinates-contents {
     display: inline-block;
+    width: 50%;
     vertical-align: middle;
     white-space: normal;
 }
