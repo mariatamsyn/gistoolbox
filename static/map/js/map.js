@@ -27,6 +27,9 @@ map.on('mousemove', function(e) {
     $('#hd-coords').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
 })
 
+// geocoder
+L.Control.geocoder({position: 'bottomright'}).addTo(map);
+
 
 
 // fullscreen 
