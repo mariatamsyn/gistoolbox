@@ -10,7 +10,7 @@ body {
 }
 
 
-.pointer-coordinates {
+.map-coordinate {
     position: absolute;
     bottom: 0;
 }
