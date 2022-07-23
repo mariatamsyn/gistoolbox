@@ -24,7 +24,7 @@ const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(m
 map.on('mousemove', function(e) {
     y = e.latlng.lat
     x = e.latlng.lng
-    $('#hd-coords').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
+    $('#pointer-coordinates').html(`Lat: ${round_num(y,5)} Long: ${round_num(x,5)}`)
 })
 
 // geocoder
