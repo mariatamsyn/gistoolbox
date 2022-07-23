@@ -22,7 +22,8 @@ body {
     font-size: 15;
     white-space: nowrap;
     justify-content: space-evenly;
-    align-items: center;
+    display: flex;
+    align-items: space-between;
 }
 
 .pointer-coordinates-contents {
