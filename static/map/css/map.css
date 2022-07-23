@@ -19,5 +19,6 @@ body {
     border-radius: 3px;
     font-weight: bolder;
     font-size: 15;
+    white-space: nowrap;
 }
 
