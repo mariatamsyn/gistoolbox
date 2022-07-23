@@ -12,4 +12,5 @@ body {
 
 .pointer-coordinates {
     position: absolute;
+    bottom: 0;
 }
