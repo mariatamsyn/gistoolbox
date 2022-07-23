@@ -31,8 +31,7 @@ SECRET_KEY = 'django-insecure-fcdxt_awdb7^d)$m*z6dw#3m(#n8r)4ve^$i@djk!t^&hh+jx5
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'mariatamsyn.pythonanywhere.com',
-    '127.0.0.1'
+    'toolbox.sheographer.com'
 ]
 
 
