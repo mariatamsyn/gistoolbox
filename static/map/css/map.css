@@ -11,7 +11,7 @@ body {
 
 .pointer-coordinates {
     position: absolute;
-    width: 30%;
+    width: 50%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.5);
@@ -21,8 +21,6 @@ body {
     font-weight: bolder;
     font-size: 15;
     white-space: nowrap;
-    justify-content: space-evenly;
-    display: flex;
 }
 
 .pointer-coordinates-contents {
