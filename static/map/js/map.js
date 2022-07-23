@@ -45,3 +45,5 @@ function toggleFullscreen() {
 function printMap() {
     window.print();
 }
+
+
