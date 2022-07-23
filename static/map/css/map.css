@@ -11,6 +11,7 @@ body {
 
 .pointer-coordinates {
     position: absolute;
+    width: 30%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.5);
