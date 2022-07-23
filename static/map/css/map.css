@@ -44,12 +44,3 @@ i {
     font-weight: bold;
     color: white;
 }
-
-#hd-coords {
-    width: 50%;
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    margin:auto;
-    background-color: rgba(255, 255, 255, 0.5);
-}
