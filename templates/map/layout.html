@@ -28,10 +28,13 @@
     </head>
 
     <body>
-        <div id="cont-main">
-            <div id="cont-hd">
-                <p id="hd-coords"></p>
+        <div id="map">
+            <div class="leaflet-control">
+                <div id="hd-coords"></div>
             </div>
+        </div>
+        
+        <div id="cont-main">
             <div id="cont-sb">
                 <div id="sb-btns">
                     <button class="sb-btn" onclick=toggleFullscreen()>
@@ -42,7 +45,7 @@
                     </button>
                 </div>
             </div>
-            <div id="map"></div>
+            
         </div>
     </body>
 
