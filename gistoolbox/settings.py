@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fcdxt_awdb7^d)$m*z6dw#3m(#n8r)4ve^$i@djk!t^&hh+jx5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'toolbox.sheographer.com'
