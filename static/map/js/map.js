@@ -28,7 +28,7 @@ map.on('mousemove', function(e) {
 })
 
 // geocoder
-L.Control.geocoder({position: 'bottomright'}).addTo(map);
+L.Control.geocoder().addTo(map);
 
 
 
