@@ -20,7 +20,7 @@ L.control.scale({position:'bottomright'}).addTo(map)
 // leaflet print
 const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
 
-// coordinates
+// cursor coordinates
 map.on('mousemove', function(e) {
     y = e.latlng.lat
     x = e.latlng.lng
@@ -29,8 +29,6 @@ map.on('mousemove', function(e) {
 
 // geocoder
 L.Control.geocoder({position: 'bottomright'}).addTo(map);
-
-
 
 // fullscreen 
 function toggleFullscreen() {
@@ -47,11 +45,11 @@ function printMap() {
 }
 
 
-const map_controls = Array.from(document.getElementsByClassName('leaflet-control'));
+// const map_controls = Array.from(document.getElementsByClassName('leaflet-control'));
 
-map_controls.forEach(control => {
-  control.addEventListener('mouseover', function handleClick(event) {
-    console.log('box clicked', event);
-    map.dragging.disable();
-  });
-});
+// map_controls.forEach(control => {
+//   control.addEventListener('mouseover', function handleClick(event) {
+//     console.log('box clicked', event);
+//     map.dragging.disable();
+//   });
+// });
