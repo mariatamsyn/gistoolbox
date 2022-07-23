@@ -50,9 +50,7 @@ function printMap() {
 const map_controls = Array.from(document.getElementsByClassName('leaflet-control'));
 
 map_controls.forEach(control => {
-  control.addEventListener('click', function handleClick(event) {
+  control.addEventListener('mouseover', function handleClick(event) {
     console.log('box clicked', event);
-
-    control.setAttribute('style', 'background-color: yellow;');
   });
 });
