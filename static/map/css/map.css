@@ -9,3 +9,7 @@ body {
     z-index: 0;
 }
 
+
+.pointer-coordinates {
+    position: absolute;
+}
