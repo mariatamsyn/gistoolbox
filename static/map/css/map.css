@@ -27,3 +27,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
+#pointer-coordinates-values {
+    width: 100%;
+}
