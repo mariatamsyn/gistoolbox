@@ -20,8 +20,8 @@ function toggle_fullscreen() {
         let FULLSCREEN_BUTTONS = document.getElementsByClassName(icons.fullscreen)
         console.log(FULLSCREEN_BUTTONS)
         for (const i in FULLSCREEN_BUTTONS) {
-            i.classList.remove(icons.fullscreen)
-            i.classList.add(icons.exit_fullscreen)
+            FULLSCREEN_BUTTONS[i].classList.remove(icons.fullscreen)
+            FULLSCREEN_BUTTONS[i].classList.add(icons.exit_fullscreen)
         }
 
     } else {
