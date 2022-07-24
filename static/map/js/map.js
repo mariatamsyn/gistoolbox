@@ -59,7 +59,9 @@ const CUSTOM_CONTROLS = {
 }
 
 for (const control in CUSTOM_CONTROLS) {
-    let div = document.createElement('div').classList.add("leaflet-control")
+    let div = document.createElement('div')
+    console.log(div)
+    div.classList.add("leaflet-control")
     let button = document.createElement('button').classList.add('custom-map-controls')
     let icon = `<i class="${CUSTOM_CONTROLS[control]}"></i>`
     console.log(div)
