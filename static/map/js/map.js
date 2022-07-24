@@ -64,6 +64,7 @@ const DIV_CLASSES = [
     'leaflet-control-layers',
     'leaflet-bar',
     'leaflet-control-attribution',
+    'leaflet-control',
 ]
 
 const BUTTON_CLASSES = [

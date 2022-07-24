@@ -29,3 +29,9 @@ body {
 #pointer-coordinates-values {
     width: 100%;
 }
+
+.custom-map-controls {
+    width: 30;
+    height: 30;
+    border: none
+}
