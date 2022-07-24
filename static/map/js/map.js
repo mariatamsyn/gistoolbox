@@ -50,6 +50,14 @@ MAP.on('mousemove', function(e) {
 })
 
 
+//// custom controls
+const LEAFLET_TOPRIGHT_CONTROLS = document.getElementsByClassName('leaflet-top leaflet-right')
 
+const CUSTOM_CONTROLS = {
+    'Collapse Layers' : "bi bi-layers",
+    'Collapse Coordinates' : "bi bi-gear",
+}
 
-
+for (let i=0; i < CUSTOM_CONTROLS.length; i++) {
+    console.log(CUSTOM_CONTROLS[i])
+}
