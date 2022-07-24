@@ -9,10 +9,13 @@ function get_cursor_coords(e, precision) {
 const map = L.map('map')
 
 // basemaps
-const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
+const basemaps = {
+    'OpenStreeMap' : L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}),
+    'Stadia Alidade Smooth Dark' : L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {maxZoom: 20, attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'})
+}
 
 // map defaults
-osm.addTo(map);
+basemaps['OpenStreeMap'].addTo(map);
 let map_view = {coords:[51.505, -0.09], zoom:13}
 map.setView(map_view.coords,map_view.zoom);
 //let map_marker = L.marker(map_view.coords).addTo(map).bindPopup('This is a pop-up!').openPopup();
