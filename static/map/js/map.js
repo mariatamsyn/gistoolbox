@@ -27,17 +27,20 @@ BASEMAPS['OpenStreeMap'].addTo(MAP);
 
 // LEAFLET CONTROLS
 
-//// zoom
-MAP.zoomControl.setPosition('topright')
-
 //// layers
 const MAP_LAYERS = L.control.layers(BASEMAPS, LAYERS, {collapsed:false,position:'topleft'}).addTo(MAP)
 
-//// scale
-const MAP_SCALE = L.control.scale({position:'bottomright'}).addTo(MAP)
+//// geocoder
+const MAP_GEOCODER = L.Control.geocoder({position:'topright'}).addTo(MAP);
 
 //// print
 const MAP_PRINT = L.control.browserPrint({position:'topright'}).addTo(MAP);
+
+//// zoom
+MAP.zoomControl.setPosition('topright')
+
+//// scale
+const MAP_SCALE = L.control.scale({position:'bottomright'}).addTo(MAP)
 
 //// cursor coordinates
 const CURSOR_COORDS_ELEMENT = document.getElementById('pointer-coordinates-values')
@@ -46,8 +49,6 @@ MAP.on('mousemove', function(e) {
     CURSOR_COORDS_ELEMENT.value = (`${cursor_coords.x}, ${cursor_coords.y}`)
 })
 
-//// geocoder
-const MAP_GEOCODER = L.Control.geocoder({position:'topright'}).addTo(MAP);
 
 
 
