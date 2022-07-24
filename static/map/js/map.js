@@ -1,14 +1,12 @@
 // leaflet map
-const map = L.map('map').setView([51.505, -0.09], 13);
+const map = L.map('map')
 
 // basemaps
-const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
 
-// map default
-
+// map defaults
+map.setView([51.505, -0.09], 13);
+osm.addTo(map);
 
 // map zoom
 map.zoomControl.setPosition('topright')
