@@ -54,8 +54,9 @@ MAP.on('mousemove', function(e) {
 const LEAFLET_TOPRIGHT_CONTROLS = document.getElementsByClassName('leaflet-top leaflet-right')
 
 const CUSTOM_CONTROLS = {
-    'Collapse Layers' : "bi bi-layers",
-    'Collapse Coordinates' : "bi bi-gear",
+    'Collapse Layers' : "bi bi-layers collapse-layers",
+    'Collapse Coordinates' : "bi bi-gear collapse-coordinates",
+    'Fullscreen' : "bi bi-fullscreen",
 }
 
 for (const control in CUSTOM_CONTROLS) {
