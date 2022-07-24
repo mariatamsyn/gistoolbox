@@ -65,7 +65,7 @@ for (const control in CUSTOM_CONTROLS) {
     button.classList.add('custom-map-controls')
     let icon = document.createElement('i')
     
-    let control_classes = CUSTOM_CONTROLS[control].split(/(\s+)/);
+    let control_classes = CUSTOM_CONTROLS[control].split(" ");
 
     console.log(control_classes)
     button.innerHTML(icon)
