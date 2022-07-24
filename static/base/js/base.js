@@ -8,13 +8,21 @@ function round_num(num, dec) {
 }
 
 function toggle_fullscreen() {
-    const FULLSCREEN_BUTTONS = document.getElementsByClassName("bi bi-fullscreen")
+    
+    let icons = {
+        fullscreen : "bi bi-fullscreen",
+        exit_fullscreen : "bi bi-fullscreen-exit"
+    }
 
     if (!document.fullscreenElement) {
         document.body.requestFullscreen();
+
+        let FULLSCREEN_BUTTONS = document.getElementsByClassName(icons.fullscreen)
         for (const i in FULLSCREEN_BUTTONS) {
-            console.log(i)
+            i.classList.remove(icons.fullscreen)
+            i.classList.add(icons.exit_fullscreen)
         }
+
     } else {
         document.exitFullscreen();
     }
