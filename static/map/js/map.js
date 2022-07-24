@@ -58,11 +58,20 @@ const CUSTOM_CONTROLS = {
     'Collapse Coordinates' : "bi bi-gear",
 }
 
+const BUTTON_CLASSES = [
+    'custom-map-controls',
+    'leaflet-touch',
+]
+
 for (const control in CUSTOM_CONTROLS) {
     let div = document.createElement('div')
     div.classList.add("leaflet-control")
     let button = document.createElement('button')
-    button.classList.add('custom-map-controls')
+    
+    for (const i in BUTTON_CLASSES) {
+        button.classList.add(BUTTON_CLASSES[i])
+    }
+    
     let icon = document.createElement('i')
     
     let control_classes = CUSTOM_CONTROLS[control].split(" ");
