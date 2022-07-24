@@ -59,7 +59,7 @@ const CUSTOM_CONTROLS = {
 }
 
 for (const control in CUSTOM_CONTROLS) {
-    let div = document.createElement('div').classList.add("leaflet-control leaflet-bar leaflet-control")
+    let div = document.createElement('div').classList.add("leaflet-control")
     let button = document.createElement('button').html(`<i class="${CUSTOM_CONTROLS[control]}"></i>`)
     div.appendChild(button)
     LEAFLET_TOPRIGHT_CONTROLS.appendChild(div)
