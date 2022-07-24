@@ -8,14 +8,12 @@ const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {m
 osm.addTo(map);
 let map_view = {coords:[51.505, -0.09], zoom:13}
 map.setView(map_view.coords,map_view.zoom);
-let map_marker = L.marker(map_view.coords).addTo(map).bindPopup('This is a pop-up!').openPopup();
+//let map_marker = L.marker(map_view.coords).addTo(map).bindPopup('This is a pop-up!').openPopup();
 
 // leaflet controls
-/// map zoom
+//// map zoom
 map.zoomControl.setPosition('topright')
-
-
-// scale
+//// scale
 L.control.scale({position:'bottomright'}).addTo(map)
 
 // leaflet print
