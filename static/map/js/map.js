@@ -43,13 +43,3 @@ function toggleFullscreen() {
 function printMap() {
     window.print();
 }
-
-
-// const map_controls = Array.from(document.getElementsByClassName('leaflet-control'));
-
-// map_controls.forEach(control => {
-//   control.addEventListener('mouseover', function handleClick(event) {
-//     console.log('box clicked', event);
-//     map.dragging.disable();
-//   });
-// });
