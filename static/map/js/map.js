@@ -62,7 +62,7 @@ const CUSTOM_CONTROLS = {
     },
     'Fullscreen' : {
         classes : "bi bi-fullscreen",
-        function : toggle_fullscreen
+        function : toggle_fullscreen()
     },
 }
 
