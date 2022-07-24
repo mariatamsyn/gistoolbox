@@ -63,8 +63,11 @@ for (const control in CUSTOM_CONTROLS) {
     div.classList.add("leaflet-control")
     let button = document.createElement('button')
     button.classList.add('custom-map-controls')
-    let icon = `<i class="${CUSTOM_CONTROLS[control]}"></i>`
-    console.log(icon)
+    let icon = document.createElement('i')
+    
+    let control_classes = CUSTOM_CONTROLS[control].split(/(\s+)/);
+
+    console.log(control_classes)
     button.innerHTML(icon)
     div.appendChild(button)
     LEAFLET_TOPRIGHT_CONTROLS[0].appendChild(div)
