@@ -15,9 +15,10 @@ body {
     transform: translateX(-50%);
     background-color: rgb(240, 240, 240);
     padding: 5px;
-    margin: 5px;
-    border-radius: 3px;
+    margin: 10px;
+    border-radius: 4px;
     align-items: center;
+    border: 2px solid rgba(0,0,0,0.2);
 }
 
 .pointer-coordinates-contents {
