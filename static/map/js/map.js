@@ -5,16 +5,15 @@ const map = L.map('map')
 const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
 
 // map defaults
-map.setView([51.505, -0.09], 13);
+let map_view = {coords:[51.505, -0.09], zoom:13}
+map.setView(map_view[coords],map_view[zoom]);
 osm.addTo(map);
+L.marker([51.505, -0.09]).addTo(map).bindPopup('This is a pop-up!').openPopup();
 
-// map zoom
+// leaflet controls
+/// map zoom
 map.zoomControl.setPosition('topright')
 
-// marker
-L.marker([51.505, -0.09]).addTo(map)
-    .bindPopup('This is a pop-up!')
-    .openPopup();
 
 // scale
 L.control.scale({position:'bottomright'}).addTo(map)
