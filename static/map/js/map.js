@@ -67,7 +67,7 @@ for (const control in CUSTOM_CONTROLS) {
     
     let control_classes = CUSTOM_CONTROLS[control].split(" ");
     for (const i in control_classes) {
-        icon.classList.add(i)
+        icon.classList.add(control_classes[i])
     }
 
     button.appendChild(icon)
