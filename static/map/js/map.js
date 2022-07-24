@@ -1,3 +1,10 @@
+// functions
+function get_cursor_coords(e, precision) {
+    let y = e.latlng.lat
+    let x = e.latlng.lng
+    return {x:round_num(x,precision),y:round_num(y,precision)}
+}
+
 // leaflet map
 const map = L.map('map')
 
@@ -13,17 +20,15 @@ map.setView(map_view.coords,map_view.zoom);
 // leaflet controls
 //// map zoom
 map.zoomControl.setPosition('topright')
-//// scale
-L.control.scale({position:'bottomright'}).addTo(map)
-
-// leaflet print
-const browserControl = L.control.browserPrint({position: 'bottomright'}).addTo(map);
-
-// cursor coordinates
+//// map scale
+const map_scale = L.control.scale({position:'bottomright'}).addTo(map)
+//// map print
+const map_print = L.control.browserPrint({position: 'bottomright'}).addTo(map);
+//// cursor coordinates
+const cursor_coords_element = document.getElementById('pointer-coordinates-values')
 map.on('mousemove', function(e) {
-    y = e.latlng.lat
-    x = e.latlng.lng
-    document.getElementById('pointer-coordinates-values').value = (`${round_num(x,5)}, ${round_num(y,5)}`)
+    cursor_coords = get_cursor_coords(e, 5)
+    cursor_coords_element.value = (`${cursor_coords.x}, ${cursor_coords.y}`)
 })
 
 // geocoder
