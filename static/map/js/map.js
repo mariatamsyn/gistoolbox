@@ -5,9 +5,9 @@ const map = L.map('map')
 const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
 
 // map defaults
-let map_center = {coords:[51.505, -0.09], zoom:13}
-map.setView(map_center[coords],map_center[zoom]);
 osm.addTo(map);
+let map_center = {coords:[51.505, -0.09], zoom:13}
+map.setView(map_center.coords,map_center.zoom);
 L.marker([51.505, -0.09]).addTo(map)
     .bindPopup('This is a pop-up!')
     .openPopup();
