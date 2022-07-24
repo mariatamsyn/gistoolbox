@@ -6,3 +6,15 @@ function round_num(num, dec) {
     ref = parseInt(ref)
     return Math.round(num*ref) / ref
 }
+
+function toggle_fullscreen() {
+    if (!document.fullscreenElement) {
+        document.body.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
+
+function print_screen() {
+    window.print();
+}

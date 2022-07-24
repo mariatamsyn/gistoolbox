@@ -18,12 +18,16 @@ map.setView(map_view.coords,map_view.zoom);
 //let map_marker = L.marker(map_view.coords).addTo(map).bindPopup('This is a pop-up!').openPopup();
 
 // leaflet controls
-//// map zoom
+
+//// zoom
 map.zoomControl.setPosition('topright')
-//// map scale
+
+//// scale
 const map_scale = L.control.scale({position:'bottomright'}).addTo(map)
-//// map print
+
+//// print
 const map_print = L.control.browserPrint({position: 'bottomright'}).addTo(map);
+
 //// cursor coordinates
 const cursor_coords_element = document.getElementById('pointer-coordinates-values')
 map.on('mousemove', function(e) {
@@ -31,19 +35,9 @@ map.on('mousemove', function(e) {
     cursor_coords_element.value = (`${cursor_coords.x}, ${cursor_coords.y}`)
 })
 
-// geocoder
-L.Control.geocoder({position: 'bottomright'}).addTo(map);
+//// geocoder
+const map_geocoder = L.Control.geocoder({position: 'bottomright'}).addTo(map);
 
-// fullscreen 
-function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-        document.body.requestFullscreen();
-    } else {
-        document.exitFullscreen();
-    }
-}
 
-// print map
-function printMap() {
-    window.print();
-}
+
+
