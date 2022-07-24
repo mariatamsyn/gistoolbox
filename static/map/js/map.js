@@ -31,7 +31,7 @@ BASEMAPS['OpenStreeMap'].addTo(MAP);
 MAP.zoomControl.setPosition('topright')
 
 //// layers
-const MAP_LAYERS = L.control.layers(BASEMAPS, LAYERS).addTo(MAP)
+const MAP_LAYERS = L.control.layers(BASEMAPS, LAYERS, {collapsed:false,position:'topleft'}).addTo(MAP)
 
 //// scale
 const MAP_SCALE = L.control.scale({position:'bottomright'}).addTo(MAP)
