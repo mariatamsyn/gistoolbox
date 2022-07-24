@@ -56,7 +56,7 @@ const LEAFLET_TOPRIGHT_CONTROLS = document.getElementsByClassName('leaflet-top l
 const CUSTOM_CONTROLS = {
     'Collapse Layers' : "bi bi-layers collapse-layers",
     'Collapse Coordinates' : "bi bi-gear collapse-coordinates",
-    'Fullscreen' : "bi bi-fullscreen",
+    'Fullscreen' : "bi bi-fullscreen fullscreen",
 }
 
 for (const control in CUSTOM_CONTROLS) {
