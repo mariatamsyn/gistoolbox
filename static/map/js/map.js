@@ -70,7 +70,7 @@ for (const control in CUSTOM_CONTROLS) {
         icon.classList.add(i)
     }
 
-    button.innerHTML(icon)
+    button.appendChild(icon)
     div.appendChild(button)
     LEAFLET_TOPRIGHT_CONTROLS[0].appendChild(div)
 }
