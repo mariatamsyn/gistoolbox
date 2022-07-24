@@ -55,13 +55,14 @@ const LEAFLET_TOPRIGHT_CONTROLS = document.getElementsByClassName('leaflet-top l
 
 const CUSTOM_CONTROLS = {
     'Collapse Layers' : {
-        classes : "bi bi-layers collapse-layers",
+        classes : "bi bi-layers",
     },
     'Collapse Coordinates' : {
-        classes : "bi bi-gear collapse-coordinates",
+        classes : "bi bi-gear",
     },
     'Fullscreen' : {
-        classes : "bi bi-fullscreen fullscreen",
+        classes : "bi bi-fullscreen",
+        function : toggle_fullscreen
     },
 }
 
@@ -76,6 +77,7 @@ for (const control in CUSTOM_CONTROLS) {
     let control_classes = CUSTOM_CONTROLS[control].classes.split(" ");
     for (const i in control_classes) {
         icon.classList.add(control_classes[i])
+        icon.onclick(CUSTOM_CONTROLS[control].function)
     }
 
     button.appendChild(icon)
