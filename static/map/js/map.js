@@ -66,8 +66,10 @@ for (const control in CUSTOM_CONTROLS) {
     let icon = document.createElement('i')
     
     let control_classes = CUSTOM_CONTROLS[control].split(" ");
+    for (const i in control_classes) {
+        icon.classList.add(i)
+    }
 
-    console.log(control_classes)
     button.innerHTML(icon)
     div.appendChild(button)
     LEAFLET_TOPRIGHT_CONTROLS[0].appendChild(div)
