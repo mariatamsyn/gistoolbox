@@ -54,9 +54,15 @@ MAP.on('mousemove', function(e) {
 const LEAFLET_TOPRIGHT_CONTROLS = document.getElementsByClassName('leaflet-top leaflet-right')
 
 const CUSTOM_CONTROLS = {
-    'Collapse Layers' : "bi bi-layers collapse-layers",
-    'Collapse Coordinates' : "bi bi-gear collapse-coordinates",
-    'Fullscreen' : "bi bi-fullscreen fullscreen",
+    'Collapse Layers' : {
+        classes : "bi bi-layers collapse-layers",
+    },
+    'Collapse Coordinates' : {
+        classes : "bi bi-gear collapse-coordinates",
+    },
+    'Fullscreen' : {
+        classes : "bi bi-fullscreen fullscreen",
+    },
 }
 
 for (const control in CUSTOM_CONTROLS) {
@@ -67,7 +73,7 @@ for (const control in CUSTOM_CONTROLS) {
     
     let icon = document.createElement('i')
     
-    let control_classes = CUSTOM_CONTROLS[control].split(" ");
+    let control_classes = CUSTOM_CONTROLS[control].classes.split(" ");
     for (const i in control_classes) {
         icon.classList.add(control_classes[i])
     }
@@ -76,3 +82,4 @@ for (const control in CUSTOM_CONTROLS) {
     div.appendChild(button)
     LEAFLET_TOPRIGHT_CONTROLS[0].appendChild(div)
 }
+
