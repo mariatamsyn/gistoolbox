@@ -15,16 +15,23 @@ const BASEMAPS = {
     'OpenTopoMap' : L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {maxZoom: 17,attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'})
 }
 
+// layers
+const LAYERS = {
+    'Sample Marker' : L.marker([51.505, -0.09]).bindPopup('This is a pop-up!').openPopup(),
+}
+
 // map defaults
 let map_view = {coords:[51.505, -0.09], zoom:13}
 MAP.setView(map_view.coords,map_view.zoom);
 BASEMAPS['OpenStreeMap'].addTo(MAP);
-//let map_marker = L.marker(map_view.coords).addTo(map).bindPopup('This is a pop-up!').openPopup();
 
 // LEAFLET CONTROLS
 
 //// zoom
 MAP.zoomControl.setPosition('topright')
+
+//// layers
+const MAP_LAYERS = L.control.layers(BASEMAPS, LAYERS).addTo(MAP)
 
 //// scale
 const MAP_SCALE = L.control.scale({position:'bottomright'}).addTo(MAP)
