@@ -58,6 +58,6 @@ const CUSTOM_CONTROLS = {
     'Collapse Coordinates' : "bi bi-gear",
 }
 
-for (let i=0; i < CUSTOM_CONTROLS.length; i++) {
-    console.log(CUSTOM_CONTROLS[i])
-}
+for (const control in CUSTOM_CONTROLS) {
+    console.log(control)
+  }
