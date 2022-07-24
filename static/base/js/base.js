@@ -10,15 +10,14 @@ function round_num(num, dec) {
 function toggle_fullscreen() {
     
     let icons = {
-        fullscreen : "bi bi-fullscreen",
-        exit_fullscreen : "bi bi-fullscreen-exit"
+        fullscreen : "bi-fullscreen",
+        exit_fullscreen : "bi-fullscreen-exit"
     }
 
     if (!document.fullscreenElement) {
         document.body.requestFullscreen();
 
         let FULLSCREEN_BUTTONS = document.getElementsByClassName(icons.fullscreen)
-        console.log(FULLSCREEN_BUTTONS)
         for (const i in FULLSCREEN_BUTTONS) {
             FULLSCREEN_BUTTONS[i].classList.remove(icons.fullscreen)
             FULLSCREEN_BUTTONS[i].classList.add(icons.exit_fullscreen)
