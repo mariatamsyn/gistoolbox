@@ -64,7 +64,6 @@ for (const control in CUSTOM_CONTROLS) {
     let button = document.createElement('button')
     button.classList.add('custom-map-controls')
     let icon = `<i class="${CUSTOM_CONTROLS[control]}"></i>`
-    button.html(icon)
     div.appendChild(button)
     LEAFLET_TOPRIGHT_CONTROLS[0].appendChild(div)
 }
