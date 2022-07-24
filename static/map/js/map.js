@@ -37,7 +37,7 @@ const MAP_LAYERS = L.control.layers(BASEMAPS, LAYERS).addTo(MAP)
 const MAP_SCALE = L.control.scale({position:'bottomright'}).addTo(MAP)
 
 //// print
-const MAP_PRINT = L.control.browserPrint({position:'bottomright'}).addTo(MAP);
+const MAP_PRINT = L.control.browserPrint({position:'topright'}).addTo(MAP);
 
 //// cursor coordinates
 const CURSOR_COORDS_ELEMENT = document.getElementById('pointer-coordinates-values')
@@ -47,7 +47,7 @@ MAP.on('mousemove', function(e) {
 })
 
 //// geocoder
-const MAP_GEOCODER = L.Control.geocoder({position:'bottomright'}).addTo(MAP);
+const MAP_GEOCODER = L.Control.geocoder({position:'topright'}).addTo(MAP);
 
 
 
