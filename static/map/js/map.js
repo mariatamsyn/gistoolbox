@@ -59,6 +59,7 @@ const CUSTOM_CONTROLS = {
 }
 
 const DIV_CLASSES = [
+    'custom-map-controls',
     'leaflet-control',
     'leaflet-touch',
     'leaflet-control-layers',
@@ -68,7 +69,6 @@ const DIV_CLASSES = [
 ]
 
 const BUTTON_CLASSES = [
-    'custom-map-controls',
 ]
 
 for (const control in CUSTOM_CONTROLS) {
