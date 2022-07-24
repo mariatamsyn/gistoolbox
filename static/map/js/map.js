@@ -58,31 +58,11 @@ const CUSTOM_CONTROLS = {
     'Collapse Coordinates' : "bi bi-gear",
 }
 
-const DIV_CLASSES = [
-    'custom-map-controls',
-    'leaflet-control',
-    'leaflet-touch',
-    'leaflet-control-layers',
-    'leaflet-bar',
-    'leaflet-control-attribution',
-    'leaflet-control',
-]
-
-const BUTTON_CLASSES = [
-]
-
 for (const control in CUSTOM_CONTROLS) {
-    let div = document.createElement('div')
-    
-    for (const i in DIV_CLASSES) {
-        div.classList.add(DIV_CLASSES[i])
-    }
-    
+    let div = document.createElement('div')    
+    div.classList.add('leaflet-control')
     let button = document.createElement('button')
-    
-    for (const i in BUTTON_CLASSES) {
-        button.classList.add(BUTTON_CLASSES[i])
-    }
+    button.classList.add('custom-map-controls')
     
     let icon = document.createElement('i')
     
