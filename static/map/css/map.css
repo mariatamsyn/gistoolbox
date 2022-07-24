@@ -19,6 +19,7 @@ body {
     align-items: center;
     border: 2px solid rgba(0,0,0,0.2);
     background-color: rgb(240, 240, 240);
+    background-clip: padding-box;
 }
 
 .pointer-coordinates-contents {
@@ -35,4 +36,5 @@ body {
     height: 30;
     border: 2px solid rgba(0,0,0,0.2);
     background-clip: padding-box;
+    border-radius: 4px;
 }
