@@ -66,5 +66,5 @@ for (const control in CUSTOM_CONTROLS) {
     let icon = `<i class="${CUSTOM_CONTROLS[control]}"></i>`
     console.log(div)
     div.appendChild(button)
-    LEAFLET_TOPRIGHT_CONTROLS.appendChild(div)
+    LEAFLET_TOPRIGHT_CONTROLS[0].appendChild(div)
 }
