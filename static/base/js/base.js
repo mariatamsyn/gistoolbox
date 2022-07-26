@@ -15,9 +15,10 @@ function toggle_fullscreen() {
     }
 
     const FULLSCREEN_BUTTONS = document.getElementsByClassName("fullscreen-button")
+    const MAIN_CONTENT_DIV = document.getElementById('main-content')
 
     if (!document.fullscreenElement) {
-        document.body.requestFullscreen();
+        MAIN_CONTENT_DIV.requestFullscreen();
 
         for (const i in FULLSCREEN_BUTTONS) {
             FULLSCREEN_BUTTONS[i].classList.remove(FULLSCREEN_ICONS.fullscreen)
