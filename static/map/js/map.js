@@ -77,7 +77,7 @@ for (const control in CUSTOM_CONTROLS) {
     }
     
     let icon = document.createElement('i')
-    
+    icon.classList.add('custom-map-control-icon')
     let control_classes = CUSTOM_CONTROLS[control].classes.split(" ");
     for (const i in control_classes) {
         icon.classList.add(control_classes[i])
