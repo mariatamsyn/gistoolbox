@@ -1,50 +1,30 @@
-<!-- {% extends 'base/layout.html' %} -->
-
-{% load static %}
-
-<html>
+{% extends 'base/layout.html' %}
     
-    <head>  
+{% block title  %}
+    Toolbox
+{% endblock %}
+        
+{% block imports %}
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     
-        <title>Sheographer Toolbox</title>
-        
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- leaflet print -->
+    <script src="{% static 'leaflet-print\js\leaflet.browser.print.min.js' %}"></script>
 
-        <!-- leaflet -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
-        
-        <!-- leaflet print -->
-        <script src="{% static 'leaflet-print\js\leaflet.browser.print.min.js' %}"></script>
+    <!-- leaflet geocoder -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+{% endblock %}
 
-        <!-- leaflet geocoder -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+{% block content %}
+    <div id="map">
+        <div class="leaflet-control pointer-coordinates-container">
+            <input type="text" class="pointer-coordinates-contents" id="pointer-coordinates-values" name="pointer-coordinates-values">
+        </div>                        
+    </div>
+{% endblock %}
 
-        <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-        <!-- custom -->
-        <link rel="stylesheet" href="{% static 'map/css/map.css' %}">
-
-    </head>
-
-    <body>
-        
-        <div id="map">
-        
-            <div class="leaflet-control pointer-coordinates-container">                
-                <input type="text" class="pointer-coordinates-contents" id="pointer-coordinates-values" name="pointer-coordinates-values">
-            </div>
-                    
-        </div>
-
-    </body>
-
-</html>
-
-<script src="{% static 'base/js/base.js' %}"></script>
-<script src="{% static 'map/js/map.js' %}"></script>
+{% block scripts %}
+    <script src="{% static 'map/js/map.js' %}"></script>
+{% endblock %}
