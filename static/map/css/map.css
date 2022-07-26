@@ -38,4 +38,6 @@ body {
     background-clip: padding-box;
     border-radius: 4px;
     font-size: 17px;
+    vertical-align: middle;
+    align-items: center;
 }
