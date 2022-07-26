@@ -69,17 +69,19 @@ const CUSTOM_CONTROLS = {
 for (const control in CUSTOM_CONTROLS) {
     let div = document.createElement('div')    
     div.classList.add('leaflet-control')
+    
     let button = document.createElement('button')
     button.classList.add('custom-map-controls')
+    button.onclick = function() {
+        CUSTOM_CONTROLS[control].function()
+    }
+
     
     let icon = document.createElement('i')
     
     let control_classes = CUSTOM_CONTROLS[control].classes.split(" ");
     for (const i in control_classes) {
         icon.classList.add(control_classes[i])
-        icon.onclick = function() {
-            CUSTOM_CONTROLS[control].function()
-        }
     }
 
     button.appendChild(icon)
