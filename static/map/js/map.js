@@ -75,7 +75,6 @@ for (const control in CUSTOM_CONTROLS) {
     button.onclick = function() {
         CUSTOM_CONTROLS[control].function()
     }
-
     
     let icon = document.createElement('i')
     
