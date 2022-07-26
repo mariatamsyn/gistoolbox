@@ -32,8 +32,8 @@ body {
 }
 
 .custom-map-controls {
-    width: 34;
-    height: 34;
+    min-width: 34;
+    min-height: 34;
     border: 2px solid rgba(0,0,0,0.2);
     background-clip: padding-box;
     border-radius: 4px;
