@@ -18,7 +18,7 @@ import yaml
 from yaml.loader import SafeLoader
 
 # Open the file and load the file
-with open('gistoolbox/config.yaml') as f:
+with open('config.yaml') as f:
     config = yaml.load(f, Loader=SafeLoader)
 
 if os.name == 'nt':
