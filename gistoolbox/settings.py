@@ -18,8 +18,10 @@ import yaml
 from yaml.loader import SafeLoader
 
 # Open the file and load the file
-with open('config.yaml') as f:
+with open('gistoolbox/config.yaml') as f:
     config = yaml.load(f, Loader=SafeLoader)
+
+print(config['SECRET_KEY'])
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
