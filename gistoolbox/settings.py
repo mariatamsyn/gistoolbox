@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-import yaml
-
-config = yaml.load(open('config.yaml'))
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
