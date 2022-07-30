@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from config import Config
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
@@ -25,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-fcdxt_awdb7^d)$m*z6dw#3m(#n8r)4ve^$i@djk!t^&hh+jx5'
+SECRET_KEY = Config.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -82,14 +83,7 @@ WSGI_APPLICATION = 'gistoolbox.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'gistoolbox',
-        'USER': 'super',
-        'PASSWORD': '123superpassword456',
-        'HOST': 'mariatamsyn-2420.postgres.pythonanywhere-services.com',
-        'PORT': '12420'
-    }
+    'default': Config.DB
 }
 
 
