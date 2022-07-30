@@ -13,16 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 
-# import pyyaml module
-import yaml
-from yaml.loader import SafeLoader
-
-# Open the file and load the file
-with open('config.yaml') as f:
-    config = yaml.load(f, Loader=SafeLoader)
-
-print(config)
-
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
     os.environ['PATH'] = os.path.join(VENV_BASE, 'Lib\\site-packages\\osgeo') + ';' + os.environ['PATH']
@@ -35,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config['SECRET_KEY']
+SECRET_KEY = 'django-insecure-fcdxt_awdb7^d)$m*z6dw#3m(#n8r)4ve^$i@djk!t^&hh+jx5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -93,12 +83,12 @@ WSGI_APPLICATION = 'gistoolbox.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config['DB_ENGINE'],
-        'NAME': config['DB_NAME'],
-        'USER': config['DB_USER'],
-        'PASSWORD': config['DB_PASSWORD'],
-        'HOST': config['DB_HOST'],
-        'PORT': config['DB_PORT']
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'gistoolbox',
+        'USER': 'super',
+        'PASSWORD': '123superpassword456',
+        'HOST': 'mariatamsyn-2420.postgres.pythonanywhere-services.com',
+        'PORT': '12420'
     }
 }
 
