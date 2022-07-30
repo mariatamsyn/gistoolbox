@@ -21,7 +21,7 @@ from yaml.loader import SafeLoader
 with open('config.yaml') as f:
     config = yaml.load(f, Loader=SafeLoader)
 
-print(config['SECRET_KEY'])
+print(config)
 
 if os.name == 'nt':
     VENV_BASE = os.environ['VIRTUAL_ENV']
