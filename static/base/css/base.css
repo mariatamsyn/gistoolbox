@@ -3,6 +3,10 @@
     height: calc(100vh - 56px);
 }
 
-#brand {
-    margin-left:13px;
+.navbar-brand {
+    margin-left: 13px;
+}
+
+.navbar-toggler {
+    margin-right: 13px;
 }
