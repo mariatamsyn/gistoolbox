@@ -18,8 +18,6 @@ const BASEMAPS = {
 
 // layers
 const LAYERS = {
-    'WPDA Boundaries' : L.WMS.layer("https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms", "wpda_wdoecm_polygon"),
-    'WPDA Locations' : L.WMS.layer("https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms", "wpda_wdoecm_points"),
     'Sample Marker' : L.marker([51.505, -0.09]),
 }
 
