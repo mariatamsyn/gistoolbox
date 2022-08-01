@@ -23,7 +23,7 @@ const LAYERS = {
 }
 
 // map defaults
-let map_view = {coords:[51.505, -0.09], zoom:13}
+let map_view = {coords:[12, 122], zoom:13}
 MAP.setView(map_view.coords,map_view.zoom);
 //BASEMAPS['OpenStreeMap'].addTo(MAP);
 
