@@ -19,6 +19,7 @@ const BASEMAPS = {
 // layers
 const LAYERS = {
     'Sample Marker' : L.marker([51.505, -0.09]),
+    'temp' : L.tileLayer.wms('https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms?', {layers: 'category'})
 }
 
 // map defaults
