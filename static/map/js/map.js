@@ -15,6 +15,17 @@ const BASEMAPS = {
     'Stamen Toner' : L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',subdomains: 'abcd',minZoom: 0,maxZoom: 20,ext: 'png'}),
 }
 
+var layer_wpda_wdoecm_polygon_0 = L.WMS.layer("https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms", "wpda_wdoecm_polygon", {
+            pane: 'pane_wpda_wdoecm_polygon_0',
+            format: 'image/png',
+            uppercase: true,
+            transparent: true,
+            continuousWorld : true,
+            tiled: true,
+            info_format: 'text/html',
+            opacity: 1,
+            attribution: '',
+        });
 
 // layers
 const LAYERS = {
@@ -27,7 +38,8 @@ const LAYERS = {
 // map defaults
 let map_view = {coords:[12, 122], zoom:6}
 MAP.setView(map_view.coords,map_view.zoom);
-BASEMAPS['OpenStreeMap'].addTo(MAP);
+//BASEMAPS['OpenStreeMap'].addTo(MAP);
+layer_wpda_wdoecm_polygon_0.addTo(MAP)
 
 // LEAFLET CONTROLS
 
