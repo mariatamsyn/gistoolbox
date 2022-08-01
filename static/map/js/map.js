@@ -19,7 +19,7 @@ const BASEMAPS = {
 // layers
 const LAYERS = {
     'Sample Marker' : L.marker([51.505, -0.09]),
-    'wmsLayer':  L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'})
+    'WPDA Boundaries (UNEP)':  L.tileLayer.wms('https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms', {layers: 'wpda_wdoecm_polygon'})
 }
 
 // map defaults
