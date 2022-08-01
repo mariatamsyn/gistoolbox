@@ -19,7 +19,8 @@ const BASEMAPS = {
 // layers
 const LAYERS = {
     'Sample Marker' : L.marker([51.505, -0.09]),
-    'WPDA Boundaries (UNEP)':  L.tileLayer.wms('https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms', {layers: 'wpda_wdoecm_polygon'})
+    'WPDA Boundaries (UNEP)':  L.tileLayer.wms('https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms?', {layers: 'wpda_wdoecm_polygon'}),
+    'Water Depth (EMODnet)' : L.tileLayer.wms('https://ows.emodnet-bathymetry.eu/wms?', {layers: 'emodnet:mean_2018'})
 }
 
 // map defaults
