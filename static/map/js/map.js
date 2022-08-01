@@ -22,8 +22,6 @@ const LAYERS = {
     'wmsLayer':  L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'})
 }
 
-'wmsLayer':  L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'})
-
 // map defaults
 let map_view = {coords:[51.505, -0.09], zoom:13}
 MAP.setView(map_view.coords,map_view.zoom);
