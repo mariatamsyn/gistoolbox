@@ -24,7 +24,7 @@ const LAYERS = {
 // map defaults
 let map_view = {coords:[12, 122], zoom:6}
 MAP.setView(map_view.coords,map_view.zoom);
-//BASEMAPS['OpenStreeMap'].addTo(MAP);
+BASEMAPS['OpenStreeMap'].addTo(MAP);
 
 // LEAFLET CONTROLS
 
