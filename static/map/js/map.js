@@ -19,7 +19,10 @@ const BASEMAPS = {
 // layers
 const LAYERS = {
     'Sample Marker' : L.marker([51.505, -0.09]),
+    'wmsLayer':  L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'})
 }
+
+'wmsLayer':  L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'})
 
 // map defaults
 let map_view = {coords:[51.505, -0.09], zoom:13}
