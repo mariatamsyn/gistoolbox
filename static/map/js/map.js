@@ -32,7 +32,8 @@ const LAYERS = {
     'Sample Marker' : L.marker([51.505, -0.09]),
     'WPDA Boundaries (UNEP)':  L.tileLayer.wms('https://data.apps.fao.org/map/gsrv/gsrv1/environment/wms?', {layers: 'wpda_wdoecm_polygon'}),
     'Water Depth (EMODnet)' : L.tileLayer.wms('https://ows.emodnet-bathymetry.eu/wms?', {layers: 'emodnet:mean_2018'}),
-    'Topo Map' : L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'})
+    'Topo Map' : L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-OSM-WMS'}),
+    'WPDA' : layer_wpda_wdoecm_polygon_0
 }
 
 // map defaults
