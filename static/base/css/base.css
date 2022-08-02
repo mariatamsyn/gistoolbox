@@ -4,7 +4,7 @@
 }
 
 nav {
-    background-color: #ffbcd9;
+    background-color: #ffbcd9 !important;
 }
 
 .navbar-brand {
