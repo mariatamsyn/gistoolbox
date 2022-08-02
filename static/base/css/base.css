@@ -3,6 +3,10 @@
     height: calc(100vh - 56px);
 }
 
+nav {
+    background-color: #ffbcd9;
+}
+
 .navbar-brand {
     margin-left: 13px;
 }
