@@ -59,7 +59,7 @@ const CUSTOM_CONTROLS = {
         classes : "bi bi-layers",
     },
     'Collapse Coordinates' : {
-        classes : "bi bi-gear",
+        classes : "bi bi-globe",
     },
     'Fullscreen' : {
         classes : "bi bi-fullscreen fullscreen-button",
